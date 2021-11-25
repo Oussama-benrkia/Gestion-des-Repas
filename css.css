@@ -1,0 +1,103 @@
+@font-face {
+    font-family: "myfont";
+    src: url("./font/Lobster/Lobster-Regular.ttf");
+}
+@font-face {
+    font-family: "my-font";
+    src: url("./font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color:transparent; 
+    width: 100%;
+    float: right;
+}
+ul>li{
+    display: inline-block;
+    position: relative;
+    margin-left: 100PX;
+}
+ul>li>a{
+    display: block;
+    padding: 10px 5px;
+    color: black;
+    text-decoration: none;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.527);
+    border-radius: 6px ;
+}
+.inup{
+    float: right;
+}
+.cl{
+    clear: both;
+}
+.navigation>img{
+    position: relative;
+    top: -50px;
+}
+/* end header */
+
+body{
+    background-image: url(./image/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    font-family: "my-font";
+}
+.all{
+    width: 100%;
+    margin: 50px 0;
+}
+.eve{
+    width: 40%;
+    float: left;
+    padding: 10px;
+
+}
+.eve>form{
+    width: 400px;
+    padding: 12px 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 225px;
+}
+form>div{
+margin: 10px 0 30px ;
+}
+input{
+    width: 90%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+}
+button{
+    border:none;
+    color: white;
+    font-size: 16px;
+
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.541);
+    border-radius: 10px;
+}
+/* end text */
+.menu{
+    width: 50%;
+    float: left;
+
+}
+h1{
+    font-family: "myfont";
+    font-size: 60px;
+    text-align: center;
+}
+p{
+    font-size: 40px;
+    text-align: center;
+}
