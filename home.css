@@ -41,6 +41,10 @@ ul>li>a{
     position: relative;
     top: -50px;
 }
+a:hover{
+    text-shadow:0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.116);
+}
 /* end header */
 
 body{
@@ -80,11 +84,15 @@ button{
     border:none;
     color: white;
     font-size: 16px;
-
+    cursor: pointer;
     width: 100%;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.541);
     border-radius: 10px;
+    transition: 1s all;
+}
+button:hover{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 /* end text */
 .menu{
