@@ -1,0 +1,6 @@
+genre : homme =>1
+	femme=>2
+
+role: 	administrateur=>1
+	gestionnaire =>2
+	utilisateur=>3
