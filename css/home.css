@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "myfont";
+    src: url("../font/Lobster/Lobster-Regular.ttf");
+}
+@font-face {
+    font-family: "my-font";
+    src: url("../font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+*{ margin:0;
+padding: 0;}
+body{
+
+  font-family: my-font;
+}
+.image{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-image: url(../image/home.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top center;
+     filter: blur(2px);
+}
+.button{
+
+    width:50%;
+    float: right;
+    z-index: 2;
+}
+.button>ul>li>a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 10px;
+    color: black;
+    width: 120px;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.267);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-right: 30px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+ul{
+    float: right;
+    list-style: none;
+    position: relative;
+}
+.button>ul>li>a:hover{
+    background-color: rgba(0, 0, 0, 0.795);
+    color: rgba(255, 255, 255, 0.788);
+    text-shadow: 0px 5px 10px rgb(255, 255, 255);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+img{
+    position: relative;
+    top: -45px;
+    left: 10px;
+}
+.content{
+    width: 50%;
+    padding: 0 30px;
+    margin: auto;
+}
+span>p{
+    text-align: center;
+    font-family: "myfont";
+    font-size: 60px;
+    margin: 50px 0;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 10px 5px white;
+}
+p{
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 10px 5px white;
+}
+div>a{
+    display: block;
+    text-decoration: none;
+    border: none;
+    width: 150px;
+    text-align: center;
+    padding: 20px ;
+    font-size:20px ;
+    border-radius: 10px;
+    position: relative;
+    left: 250px;
+    background-color: rgba(94, 115, 153, 0.747);
+    color: rgba(255, 255, 255, 0.774);
+    transition: 1s all;
+}
+div>a:hover{
+    background-color: rgba(94, 115, 153);
+    color: rgba(255, 255, 255);
+    text-shadow: 0px 5px 10px black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.15, 1.15);
+}

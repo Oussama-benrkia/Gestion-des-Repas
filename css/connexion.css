@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family: "my-font";
+    src: url("../font/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "F";
+    src: url("../font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "F";
+}
+.prin{
+    width: 45%;
+    height: 100vh;
+    float: left;
+}
+
+.img{
+    width: 55%;
+    float: left;
+    height: 100vh;
+background-image: url(../image/connexion.jpg);
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;}
+.prin>.logo{
+height: 10vh;
+}
+.prin>.log{
+    height: 85vh;
+}
+form{
+    margin: 30px auto;
+    height: 60vh;
+    width: 90%;
+}
+form>input:not(input[type="submit"]){
+    width: 90%;
+    padding: 15px 15px;
+    margin: 25px 14px;
+    border :none;
+
+    font-size: 17px;
+    border-radius: 7px;
+    border-bottom:1px solid gray ;
+    background-color: rgba(185, 185, 185, 0.363);
+}
+form>span{
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "my-font";
+    font-size: 30px;
+}
+input[type="submit"]{
+width: 50%;
+position: relative;
+margin: 70px 135px;
+padding: 15px;
+color: white;
+border: none;
+font-size: 20px;
+border-radius: 10px;
+background-color: rgba(94, 115, 153, 0.747);
+color: rgba(255, 255, 255, 0.774);
+transition: 1s all;
+}
+form~p{
+    margin-top: 80px;
+    text-align: center;
+}
+img{
+    position: relative;
+    top:-50px;
+    left: 10px;
+}
+input[type="submit"]:hover{
+    background-color: rgba(94, 115, 153);
+    color: rgba(255, 255, 255);
+    text-shadow: 0px 5px 10px black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.15, 1.15);
+}

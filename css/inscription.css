@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "font";
+}
+@font-face {
+    font-family: "my-font";
+    src: url("../font/Montserrat/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "font";
+    src: url("../font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+.prin{
+    width: 45%;
+    height: 100vh;
+    float: left;
+}
+.img{
+    width: 55%;
+    float: left;
+    height: 100vh;
+background-image: url(../image/inscri.jpg);
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;}
+.prin>.logo{
+height: 10vh;
+}
+.prin>.log{
+    height: 85vh;
+}
+form{
+    margin:5px  auto;
+    height: 75vh;
+    width: 90%;
+}
+.class{
+    width: 90%;
+    padding: 12px 12px;
+    margin:10px 14px;
+    border :none;
+    font-size: 16px;
+    border-radius: 7px;
+    border-bottom:1px solid gray ;
+    background-color: rgba(185, 185, 185, 0.363);
+}
+.calorie{
+    width: 45%;
+    padding: 12px 15px;
+    margin:10px 130px;
+    border :none;
+    font-size: 16px;
+    border-radius: 7px;
+    border-bottom:1px solid gray ;
+    background-color: rgba(185, 185, 185, 0.363);
+}
+form>span{
+    display: block;
+    text-align: center;
+    font-family: "my-font";
+    font-size: 30px;
+}
+form>div{
+    width:  30%;
+    float: left;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+form> div>input{
+    margin-left: 80px;
+}
+input[type="submit"]{
+width: 50%;
+position: relative;
+margin: 35px 135px;
+padding: 15px;
+color: white;
+border: none;
+font-size: 20px;
+border-radius: 10px;
+background-color: rgba(94, 115, 153, 0.747);
+color: rgba(255, 255, 255, 0.774);
+}
+form~p{
+    margin-top: 40px;
+    text-align: center;
+}
+img{
+    position: relative;
+    top:-50px;
+    left: 410px;
+    
+}
