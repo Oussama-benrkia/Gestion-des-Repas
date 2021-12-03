@@ -18,9 +18,9 @@ if(isset($_POST['connecter'])){
 	}
 	$query="INSERT INTO user (firstname,lastname,email,password,role,genre,calorie )VALUES ('$nom','$prenom','$emai','$password','$role','$genre','$nbr_calorie')";
 	if(mysqli_query($connect,$query)){
-	header("Location: Inscription.php?name=".$nom);}
+	header("Location: Inscription.html?name=".$nom);}
 	else{
-		header("Location: Inscription.php?error=error");
+		header("Location: Inscription.html?error=error");
 	}
 	exit();
 }

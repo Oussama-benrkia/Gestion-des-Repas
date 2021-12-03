@@ -25,7 +25,7 @@
                 <input type="password" name="password" id="password" class="password" placeholder="password" onkeypress="check_pass()" required><br>
                 <input type="submit" value="se connecter" name="connecter" id="connecter" class="connecter">
             </form>
-            <p>Vous n'avez pas encore de compte ?<a href="./Inscription.php"> Inscrivez-vous</a></p>
+            <p>Vous n'avez pas encore de compte ?<a href="./Inscription.html"> Inscrivez-vous</a></p>
         
         </div></div>
         <div class="img"></div>
