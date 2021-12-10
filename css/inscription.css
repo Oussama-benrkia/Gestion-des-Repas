@@ -83,6 +83,14 @@ font-size: 20px;
 border-radius: 10px;
 background-color: rgba(94, 115, 153, 0.747);
 color: rgba(255, 255, 255, 0.774);
+transition: 1s;
+}
+input[type="submit"]:hover{
+    background-color: rgba(94, 115, 153);
+    color: rgba(255, 255, 255);
+    text-shadow: 0px 5px 10px black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transform: scale(1.05, 1.05);
 }
 form~p{
     margin-top: 40px;
@@ -92,5 +100,9 @@ img{
     position: relative;
     top:-50px;
     left: 410px;
-    
+
+}
+.nn:focus{
+    outline: none;
+    border-bottom: 1px solid blue;
 }

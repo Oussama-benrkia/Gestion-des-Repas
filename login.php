@@ -8,8 +8,16 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 	$row=mysqli_query($connect,$requet);
 	$array=mysqli_fetch_all($row);
 	if(count($array)!==0){
-		header("Location: connexion.php?user_id=".$array[0][0]."&role=".$array[0][3]);
+		if($array[0][3]===3){
+			header("Location: ./utilisateur/listrepas.html?user_id=".$array[0][0]."&role=".$array[0][3]);
 		exit();
+		}else if($array[0][3]==1){
+			header("Location: ./administrateur/listeutil.html?user_id=".$array[0][0]."&role=".$array[0][3]);
+			exit();
+		}else{
+			header("Location: ./gestionner/listeutil.html?user_id=".$array[0][0]."&role=".$array[0][3]);
+			exit();
+		}
 	}
 	else{
 		header("Location: connexion.php?error=Votre identifiant ou votre mot de passe est incorrect.");

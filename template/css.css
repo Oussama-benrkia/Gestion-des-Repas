@@ -39,16 +39,22 @@ ul>.l{
     border-radius: 50%;
 }
 .l>i{
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-    color: rgba(0, 0, 0, 0.575);
-    border: 1px solid;
-    text-align: center;
-    padding: 10px;
-    border-radius: 50%;
-    transition: 0.5;
+    position: absolute;
+    left: -16px;
+    top: 12px;
 }
+.l{position: relative;}
+.l>p{text-align: center;
+margin-top: 5px}
+.l>p:first-of-type{
+    font-weight:bold;
+    font-size: 18px;
+}
+.l>p:last-of-type{
+    font-weight:lighter;
+    font-size: 15px;
+}
+
 .bar{
     position: absolute;
     top:70px;
@@ -137,8 +143,8 @@ img{
 .con>div{
    margin: auto;
    background-color: white;
-    width: 90%;
-    height: 84vh;
+    width: 80%;
+    height: 70vh;
     border-radius: 10px;
 }
 

@@ -1,42 +1,35 @@
-function check_pass(){
-    let a=document.getElementById("password").value;
-    let b=/^([A-z1-9@_$&.,#+*()]*)$/g;
 
-    if(b.test(a)==true && a.length>7){
-        document.getElementById("connecter").disabled=false;
-        document.getElementById("connecter").style.cursor="auto";
-        document.getElementById("password").style.backgroundColor="rgb(5, 152, 98,0.4)"
-    }else{
-        document.getElementById("connecter").disabled=true;
-        document.getElementById("connecter").style.cursor="no-drop";
-        document.getElementById("password").style.backgroundColor="rgb(255, 0, 0,0.4)"
-    }
-}
-function check_nbr(){
-    let a=document.getElementById("calorie").value;
-    if(Number.isInteger(+a)==false){
-
-        document.getElementById("connecter").disabled=true;
-        document.getElementById("connecter").style.cursor="no-drop";
-        document.getElementById("calorie").style.backgroundColor="rgb(255, 0, 0,0.4)"
+function submitFomr(event)
+{
+    event.preventDefault();
+    const email=document.getElementById("email").value;
+    const password=document.getElementById("password").value;
+    let a,b;
+    let regexpas=/^([\w@_\-\.#\+\*()]){8,16}$/;
+    let regexema=/^[A-z]{1}([\w\-]){3,25}@([A-z]){3,8}\.([A-z]){2,4}$/;
+    if(regexema.test(email)){
+        a=true;
+        visible("email","rgb(5, 152, 98,0.4)","AB","AA");
     }
     else{
-        document.getElementById("connecter").disabled=false;
-        document.getElementById("connecter").style.cursor="auto";
-        document.getElementById("calorie").style.backgroundColor="rgb(5, 152, 98,0.4)"
+        a=false;
+        visible("email","rgb(255, 0, 0,0.4)","AA","AB");
+    }
+    if(regexpas.test(password)){
+        b=true;
+        visible("password","rgb(5, 152, 98,0.4)","BA","BB");
+    }
+    else{
+        b=false;
+        visible("password","rgb(255, 0, 0,0.4)","BB","BA");
+    }
+    if(a===true && b===true){
+        document.getElementById("form_post").submit();
+        
     }
 }
-function check_name(mot){
-    let a=document.getElementById(mot).value;
-    let b=/^([A-z]*)$/g;
-
-    if(b.test(a)==true && a.length>3){
-        document.getElementById("connecter").disabled=false;
-        document.getElementById("connecter").style.cursor="auto";
-        document.getElementById(mot).style.backgroundColor="rgb(5, 152, 98,0.4)"
-    }else{
-        document.getElementById("connecter").disabled=true;
-        document.getElementById("connecter").style.cursor="no-drop";
-        document.getElementById(mot).style.backgroundColor="rgb(255, 0, 0,0.4)"
-    }
+function visible(element,color,none,block){
+    document.getElementById(element).style.backgroundColor=color;
+        document.getElementById(none).style.display="none";
+        document.getElementById(block).style.display="block";
 }

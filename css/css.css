@@ -10,6 +10,11 @@ body{
     font-family: "my-font";
 
 }
+ul>li>form>button:hover{
+  color: white;
+  text-shadow: 0 0 10px white;
+  background-color:rgba(0, 0, 0, 0.501);
+} 
 .all{
     width: 100%;
     height: 100vh;
@@ -31,31 +36,44 @@ ul>.l{
     display: inline-block;
     position: relative;
     margin: 15px 20px;
-    position: relative;
     top:-5px;
 }
 .l{
     cursor: pointer;
-    border-radius: 50%;
-}
-.l>i{
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-    color: rgba(0, 0, 0, 0.575);
-    border: 1px solid;
+    position: relative;
+  }
+  .l>i{
+  position: absolute;
+    top: 15px;
+    left: -19px;
+  }
+  .l>p{
     text-align: center;
-    padding: 10px;
-    border-radius: 50%;
-    transition: 0.5;
-}
-.bar{
+  }
+  .l>p:first-of-type{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .l>p:last-of-type{
+    font-size: 16px;
+  }
+  .bar{
     position: absolute;
-    top:70px;
-    right: 5px;
+    top:60px;
+    right: 8px;
     display: none;
     z-index: 22;
-}
+  }
+  ul>li>form>button{
+  width: 190px;
+    padding: 10px 5px;
+    font-size: 17px;
+    border: none;
+    background-color: rgba(220, 220, 220, 0.8);
+    color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px
+  }
 ul>li>a{ 
     display: block;
     padding: 10px 10px;
@@ -108,14 +126,14 @@ ul>li>a{
      background-position: top center;
      filter: blur(4px);
 }
-a:hover{
+.dec:hover{
     font-size: 18px;
     font-weight: bolder;
     color: white;
     text-shadow: 0 0 10px white;
     background-color:rgba(0, 0, 0, 0.501);
 } 
-ul>li{
+.inup>ul>li{
     float: left
 }
 .inup{
@@ -137,7 +155,7 @@ img{
 .con>div{
    margin: auto;
    background-color: white;
-    width: 90%;
+    width: 80%;
     height: 84vh;
     border-radius: 10px;
 }

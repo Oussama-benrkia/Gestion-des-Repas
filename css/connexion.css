@@ -37,7 +37,10 @@ form{
     height: 60vh;
     width: 90%;
 }
-form>input:not(input[type="submit"]){
+.tafw{
+    position: relative;
+}
+.tafw>input:not(input[type="submit"]){
     width: 90%;
     padding: 15px 15px;
     margin: 25px 14px;
@@ -59,10 +62,8 @@ text-shadow: 0 0 70px;
 }
 input[type="submit"]{
 width: 50%;
-position: relative;
-margin: 70px 135px;
+margin: 20px 135px;
 padding: 15px;
-color: white;
 border: none;
 font-size: 20px;
 border-radius: 10px;
@@ -84,7 +85,7 @@ input[type="submit"]:hover{
     color: rgba(255, 255, 255);
     text-shadow: 0px 5px 10px black;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    transform: scale(1.15, 1.15);
+    transform: scale(1.05, 1.05);
 }
 .error{
     background-color: rgb(255, 0, 0,0.2);
@@ -97,4 +98,23 @@ input[type="submit"]:hover{
 .error>p>i{
         color: red; 
     margin-right: 10px
+}
+.nn:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+.tafw>i{
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 39px;
+    font-size: 25px
+}
+.tafw>i:first-of-type{
+
+    color: #029b63bd;
+}
+.tafw>i:last-of-type{
+
+    color: rgba(255, 0, 47, 0.707);
 }

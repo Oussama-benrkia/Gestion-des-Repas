@@ -1,0 +1,199 @@
+.content{
+  padding: 20px 30px;
+
+}
+.link{
+  margin: 10px 0;
+}
+.link>ul>li{
+  margin: 0 10%
+}
+.image{
+    width: 30%;
+    height: 45vh;
+    float: left;
+    background-color: #d6d6d636;
+    border-radius: 10px;
+    position: relative;
+}
+.image>img{
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 40%;
+    left: 15%;
+    top: 12%;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "my-font";
+  src: url("../font/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+body{
+  font-family: "my-font";
+
+}
+.all{
+  width: 100%;
+  height: 100vh;
+}
+.navigation{
+  background-color: rgba(255, 255, 255, 0.85);
+  height: 11vh;
+}
+ul{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color:transparent; 
+  width: 100%;
+  
+}
+ul>.l{
+  display: inline-block;
+  position: relative;
+  margin: 15px 20px;
+  position: relative;
+  top:-5px;
+}
+.l{
+  cursor: pointer;
+  position: relative;
+}
+.l>i{
+position: absolute;
+  top: 15px;
+  left: -19px;
+}
+.l>p{
+  text-align: center;
+}
+.l>p:first-of-type{
+  font-size: 18px;
+  font-weight: bold;
+}
+.l>p:last-of-type{
+  font-size: 16px;
+}
+.bar{
+  position: absolute;
+  top:60px;
+  right: 8px;
+  display: none;
+  z-index: 22;
+}
+ul>li>form>button{
+width: 190px;
+  padding: 10px 5px;
+  font-size: 17px;
+  border: none;
+  background-color: rgba(220, 220, 220, 0.8);
+  color: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px
+}
+ul>li>a{ 
+  display: block;
+  padding: 10px 10px;
+  color: black;
+  text-decoration: none;
+  height: 20px;
+  width: 120px;
+  text-align: center;
+
+  border: 1px solid ;
+  border-radius: 6px ;
+
+  transition: 1s;
+}
+.dec{
+  background-color: rgba(255, 255, 255, 0.782);
+  border: 1px solid black;
+}
+.inup>ul>li>a{
+  position: relative;
+   right:100px;
+   top:10px;
+   transition: 0.5s;
+  font-size: 30px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  color: rgba(0, 0, 0, 0.575);
+  border: 1px solid;
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%
+}
+.hover:hover{
+  color: black;
+
+  background-color: rgba(3, 112, 255, 0.124);
+}
+.dd{
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  background-image: url(../image/home.jpg);
+  background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   filter: blur(4px);
+}
+button[type="sbmit"]:hover{
+  font-size: 18px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 10px white;
+  background-color:rgba(0, 0, 0, 0.501);
+} 
+ul>li{
+  float: left
+}
+.inup{
+  float: right;
+}
+.cl{
+  clear: both;
+}
+img{
+  position: relative;
+  left: 7px;
+  top: -40px
+}
+.con{
+  margin-top: 2vh;
+  display: flex;
+  width: 100%;
+}
+.con>div{
+ margin: 5% auto;
+ background-color: white;
+  width: 80%;
+  height: 60vh;
+  border-radius: 10px;
+}
+
+.affi{
+    width: 70%;
+    float: left;
+}
+.affi>p{
+  margin: 20px 0;
+  font-size: 18px
+}
+a:hover{
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 0 0 10px white;
+    background-color:rgba(0, 186, 53, 0.501);
+} 
